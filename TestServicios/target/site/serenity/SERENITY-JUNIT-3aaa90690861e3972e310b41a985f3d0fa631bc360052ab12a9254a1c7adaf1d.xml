@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Crear usuario" skipped="0" tests="2" time="1.41" timestamp="2019-12-30 01:33:27"><testcase name="Creacion de usuario"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+in.co.gorest.www.task.CrearUn.performAs(CrearUn.java:32)&#13;
+in.co.gorest.www.stepdefinitions.CrearUsuarioStepDefinitions.joseIntentaCrearUnUsuarioConLosDatos(CrearUsuarioStepDefinitions.java:25)&#13;
+✽.Jose intenta crear un usuario con los datos(src/main/resources/in/co/gorest/www/features/test_servicios.feature:9)&#13;
+</system-err></testcase></testsuite>
