@@ -20,18 +20,11 @@ public class CrearUn implements Task{
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		
-		String peticionJson = "{\r\n" + 
-				"	\"first_name\": \"" + usuario.getFirstName() + "\",\r\n" + 
-				"	\"last_name\": \"" + usuario.getLastName() + "\",\r\n" + 
-				"	\"gender\": \"" + usuario.getGender() + "\",\r\n" + 
-				"	\"email\": \"" + usuario.getEmail() + "\",\r\n" + 
-				"	\"status\": \"" + usuario.getStatus() + "\"\r\n" + 
-				"}\r\n";
 		
 		actor.attemptsTo(Post.to("/users").with(
                 requestSpecification -> requestSpecification.contentType(ContentType.JSON)
                 	.header("Authorization","Bearer DKMPvGvi2nzqnvWgS1oWgPe0g4B2E84JwSgq")
-                       .body(peticionJson)
+                       .body(this.usuario)
                  ));
 		
 
