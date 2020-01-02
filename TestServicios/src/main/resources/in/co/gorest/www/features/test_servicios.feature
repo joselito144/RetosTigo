@@ -18,4 +18,4 @@ Examples:
 
 	| first_name    |  last_name    |  gender   |  email                |  status   | codigoEsperado |
 	| jose          |  suarez       |  male     |  jose@peoresnada.com  |  active   |   200          |
-	| jose          |  suarez       |  male     |  jose                 |  active   |   422          |
+	| johan         |  tamayo       |  male     |  johan@peoresnada.com |  active   |   200          |
