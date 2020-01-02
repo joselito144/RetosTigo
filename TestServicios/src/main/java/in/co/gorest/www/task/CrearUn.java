@@ -13,7 +13,6 @@ public class CrearUn implements Task{
 	
 	private Usuario usuario;
 	
-	Actor Jose;
 	public CrearUn(Usuario usuario) {
 		this.usuario = usuario;
 	}
@@ -29,7 +28,7 @@ public class CrearUn implements Task{
 				"	\"status\": \"" + usuario.getStatus() + "\"\r\n" + 
 				"}\r\n";
 		
-		Jose.attemptsTo(Post.to("/users").with(
+		actor.attemptsTo(Post.to("/users").with(
                 requestSpecification -> requestSpecification.contentType(ContentType.JSON)
                 	.header("Authorization","Bearer DKMPvGvi2nzqnvWgS1oWgPe0g4B2E84JwSgq")
                        .body(peticionJson)
