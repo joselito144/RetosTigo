@@ -1,7 +1,7 @@
 #Author: jose.suarez@sophossolutions.com
 
 
-@tag
+
 Feature: Crear usuario
   Yo como usuario deseo crear mi usuario en la api rest
 
